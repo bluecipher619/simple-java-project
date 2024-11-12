@@ -3,7 +3,7 @@ pipeline {
     stages {
 		stage('	Checkout external proj') {
 			steps {
-				checkout scmGit(branches: [[name: '*/Ci']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/julianjupiter/java-web-app-with-embedded-tomcat.git']])
+				checkout scmGit(branches: [[name: '*/ci']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/julianjupiter/java-web-app-with-embedded-tomcat.git']])
 			}
 		}
         stage('Build') { 
